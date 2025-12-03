@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Pulse – Official Band Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #0d1020; color: #fff;}
+    header { background: #7b2ff2; color: #fff; padding: 2em 0; text-align: center; }
+    nav { background: #232159; text-align: center;}
+    nav a {
+      color: #fff; padding: 1em 2em; display: inline-block; text-decoration: none; font-weight: bold;
+    }
+    nav a:hover { background: #7b2ff2; }
+    .container { max-width: 1080px; margin: 2em auto; background: #232159; padding: 2em; border-radius: 16px;}
+    section { margin-bottom: 2.6em;}
+    h2 { color: #f953c6; margin-bottom: 0.6em;}
+    /* Music Player */
+    .player-section { text-align: center; margin-bottom: 2em; }
+    audio { width: 85%; margin: 1em 0;}
+    .tour-list {
+      background: #1c1745; border-radius: 10px; padding: 1em 1.3em; box-shadow: 0 1px 8px #4895ef55;
+      margin-bottom: 2em;
+    }
+    .tour-list ul { padding-left: 1.1em; }
+    .tour-list li { margin-bottom: 0.5em; font-weight: bold;}
+    .merch-list { display: flex; flex-wrap: wrap; gap: 1.5em; }
+    .merch { background: #120943; border-radius: 9px; padding: 1em; width: 195px; box-shadow: 0 1px 8px #bee9e8; text-align: center;}
+    .merch img { width: 100%; height: 130px; object-fit: cover; border-radius: 8px; margin-bottom: 0.4em; }
+    .merch-title { font-weight: bold; color: #f953c6;}
+    .buy-btn {
+      background: #7b2ff2; color: #fff; border: none; border-radius: 4px; padding: 0.5em 1.2em; margin-top: 0.6em;
+      cursor: pointer; font-weight: bold; font-size: 0.97em;
+    }
+    .buy-btn:hover { background: #232159;}
+    .gallery { display: flex; flex-wrap: wrap; gap: 1em; }
+    .gallery img, .gallery video {
+      border-radius: 8px; width: 200px; height: 130px; object-fit: cover; background: #161027;
+      box-shadow: 0 2px 8px #8a6fdf;
+      margin-bottom: 0.5em;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover, .gallery video:hover { transform: scale(1.08); }
+    footer { background: #232159; color: #fff; text-align: center; padding: 1.5em 0; margin-top: 2.3em; }
+    @media (max-width: 800px) {
+      .container { padding: 1em; }
+      .merch-list, .gallery { flex-direction: column; gap: 1em;}
+      .merch, .gallery img, .gallery video { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Neon Pulse</h1>
+    <p>Official Website of the Band</p>
+  </header>
+  <nav>
+    <a href="#music">Music</a>
+    <a href="#tour">Tour Dates</a>
+    <a href="#merch">Merchandise</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <!-- Music Player -->
+    
+    <!-- Tour Dates -->
+    <section id="tour">
+      <h2>Upcoming Tour Dates</h2>
+      <div class="tour-list">
+        <ul>
+          <li> Dec 09, 2025 – Mumbai, Jio Arena </li>
+          <li> Dec 14, 2025 – Bangalore, RockFest Grounds </li>
+          <li> Dec 18, 2025 – Delhi, Metro Stage </li>
+          <li> Jan 18, 2026 – Goa, Waves Festival </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Merchandise -->
+    <section id="merch">
+      <h2>Band Merchandise</h2>
+      <div class="merch-list">
+        <div class="merch">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="T-shirt">
+          <div class="merch-title">Band T-shirt</div>
+          <div>₹599</div>
+          <button class="buy-btn" onclick="alert('To Buy, visit the online store or contact us!')">Buy Now</button>
+        </div>
+        <div class="merch">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Poster">
+          <div class="merch-title">Signed Poster</div>
+          <div>₹299</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="merch">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Cap">
+          <div class="merch-title">Band Cap</div>
+          <div>₹399</div>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery of Photos and Videos -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Live Show 1">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Backstage">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="On Stage">
+        <video controls poster="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=400&q=80">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact & Bookings</h2>
+      <p>Email: <a href="mailto:neonpulseband@email.com" style="color:#f953c6;">neonpulseband@email.com</a></p>
+      <p>Instagram: <a href="#" style="color:#f953c6;">@neonpulseband</a></p>
+      <p>Phone: +91-99000-12345</p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Neon Pulse Band. All rights reserved.
+  </footer>
+</body>
+</html>
